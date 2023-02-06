@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="kocoz"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-05 09:11:32 &#214;S"/>
+        <attribute name="created" value="a29jb3o7REVTS1RPUC1TRjVKMTgzOzIwMjItMTEtMDU7MTA6NDg6MjEgw5bDljszMTEz"/>
+        <attribute name="edited" value="a29jb3o7REVTS1RPUC1TRjVKMTgzOzIwMjItMTEtMDU7MDk6MTE6MzIgw5ZTOzI7MzA5MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, n, saya&#231;" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <for variable="saya&#231;" start="1" end="n" direction="inc" step="1">
+                <assign variable="a" expression="saya&#231;*(saya&#231;^2)+1"/>
+                <output expression="a" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

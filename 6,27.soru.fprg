@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="kocoz"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 03:52:52 &#214;S"/>
+        <attribute name="created" value="a29jb3o7REVTS1RPUC1TRjVKMTgzOzIwMjItMTEtMDQ7MDI6NTU6MDMgw5ZTOzI5ODA="/>
+        <attribute name="edited" value="a29jb3o7REVTS1RPUC1TRjVKMTgzOzIwMjItMTEtMDQ7MDM6NTI6NTIgw5ZTOzI7MzA5MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, x1, y1, uz" type="Integer" array="False" size=""/>
+            <output expression="&quot;a,b ve c i&#231;in de&#287;er giriniz&quot;" newline="True"/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <output expression="&quot;x1 ve y1 i&#231;in de&#287;er giriniz&quot;" newline="True"/>
+            <input variable="x1"/>
+            <input variable="y1"/>
+            <if expression="a*x1+b*y1+c==0">
+                <then>
+                    <output expression="&quot;P(&quot;&amp;x1&amp;&quot;,&quot;&amp;y1&amp;&quot;) noktas&#305;&quot;&amp;a&amp;&quot;x+&quot;&amp;b&amp;&quot;y+&quot;&amp;c&amp;&quot;=0 do&#287;rusu &#252;zerindedir&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="a*x1+b*y1+c&gt;0">
+                        <then>
+                            <assign variable="uz" expression="(a*x1+b*y1+c)/(sqrt(a^2+b^2))"/>
+                        </then>
+                        <else>
+                            <assign variable="uz" expression="-1*(a*x1+b*y1+c)/(sqrt(a^2+b^2))"/>
+                        </else>
+                    </if>
+                    <output expression="&quot;P(&quot;&amp;x1&amp;&quot;,&quot;&amp;y1&amp;&quot;) noktas&#305;n&#305;n&quot;&amp;a&amp;&quot;x+&quot;&amp;b&amp;&quot;y+&quot;&amp;c&amp;&quot;=0 do&#287;rusuna uzakl&#305;&#287;&#305;=&quot;&amp;uz" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

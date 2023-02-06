@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="kocoz"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-22 03:26:14 &#214;&#214;"/>
+        <attribute name="created" value="a29jb3o7REVTS1RPUC1TRjVKMTgzOzIwMjItMTEtMjI7MDM6MTc6MjQgw5bDljszMTEz"/>
+        <attribute name="edited" value="a29jb3o7REVTS1RPUC1TRjVKMTgzOzIwMjItMTEtMjI7MDM6MjY6MTQgw5bDljsxOzMyMjA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ogrencino, max, min, x" type="Integer" array="False" size=""/>
+            <input variable="ogrencino"/>
+            <assign variable="max" expression="ogrencino%10"/>
+            <assign variable="min" expression="ogrencino%10"/>
+            <while expression="ogrencino&gt;1">
+                <assign variable="x" expression="ogrencino%10"/>
+                <if expression="x&gt;max">
+                    <then>
+                        <assign variable="max" expression="x"/>
+                    </then>
+                    <else>
+                        <if expression="x&lt;min">
+                            <then>
+                                <assign variable="min" expression="x"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </else>
+                </if>
+                <assign variable="ogrencino" expression="(ogrencino-ogrencino%10)/10"/>
+            </while>
+            <output expression="max" newline="True"/>
+            <output expression="min" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

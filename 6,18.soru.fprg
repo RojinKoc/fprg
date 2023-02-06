@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="kocoz"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 07:43:12 &#214;S"/>
+        <attribute name="created" value="a29jb3o7REVTS1RPUC1TRjVKMTgzOzIwMjItMTEtMDM7MTE6MTU6MjYgw5bDljszMTEx"/>
+        <attribute name="edited" value="a29jb3o7REVTS1RPUC1TRjVKMTgzOzIwMjItMTEtMDQ7MDc6NDM6MTIgw5ZTOzM7MzA5Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N, T1, T2, T3, saya&#231;" type="Integer" array="False" size=""/>
+            <assign variable="saya&#231;" expression="0"/>
+            <assign variable="T1" expression="0"/>
+            <assign variable="T2" expression="0"/>
+            <assign variable="T3" expression="0"/>
+            <input variable="N"/>
+            <while expression="saya&#231;&lt;=N">
+                <assign variable="T1" expression="T1+saya&#231;"/>
+                <assign variable="saya&#231;" expression="saya&#231;+1"/>
+            </while>
+            <output expression="T1" newline="True"/>
+            <assign variable="saya&#231;" expression="1"/>
+            <while expression="saya&#231;&lt;=N">
+                <assign variable="T2" expression="T2+saya&#231;"/>
+                <assign variable="saya&#231;" expression="saya&#231;+2"/>
+            </while>
+            <output expression="T2" newline="True"/>
+            <assign variable="saya&#231;" expression="0"/>
+            <while expression="saya&#231;&lt;=N">
+                <assign variable="T3" expression="T3+saya&#231;"/>
+                <assign variable="saya&#231;" expression="saya&#231;+2"/>
+            </while>
+            <output expression="T3" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

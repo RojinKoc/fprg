@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="kocoz"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 04:25:26 &#214;S"/>
+        <attribute name="created" value="a29jb3o7REVTS1RPUC1TRjVKMTgzOzIwMjItMTEtMDQ7MDM6NTM6MTYgw5ZTOzI5ODM="/>
+        <attribute name="edited" value="a29jb3o7REVTS1RPUC1TRjVKMTgzOzIwMjItMTEtMDQ7MDQ6MjU6MjYgw5ZTOzQ7MzA5NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, x, y, z, i" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <assign variable="x" expression="1"/>
+            <assign variable="y" expression="1"/>
+            <assign variable="z" expression="1"/>
+            <for variable="i" start="a" end="1" direction="dec" step="1">
+                <assign variable="x" expression="x*i"/>
+            </for>
+            <for variable="i" start="b" end="1" direction="dec" step="1">
+                <assign variable="y" expression="y*i"/>
+            </for>
+            <for variable="i" start="a-b" end="1" direction="dec" step="1">
+                <assign variable="z" expression="z*i"/>
+            </for>
+            <output expression="x/(y*z)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

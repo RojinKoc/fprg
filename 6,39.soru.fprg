@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="kocoz"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 08:01:59 &#214;S"/>
+        <attribute name="created" value="a29jb3o7REVTS1RPUC1TRjVKMTgzOzIwMjItMTEtMDQ7MDQ6MjU6NDEgw5ZTOzI5ODE="/>
+        <attribute name="edited" value="a29jb3o7REVTS1RPUC1TRjVKMTgzOzIwMjItMTEtMDQ7MDg6MDE6NTkgw5ZTOzM7MzA5OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, i" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <if expression="a&gt;8">
+                <then>
+                    <output expression="&quot;2,3,5,7&quot;" newline="True"/>
+                    <assign variable="i" expression="8"/>
+                    <while expression="i&lt;a">
+                        <if expression="i%2==0">
+                            <then/>
+                            <else>
+                                <if expression="i%3==0">
+                                    <then/>
+                                    <else>
+                                        <if expression="i%5==0">
+                                            <then/>
+                                            <else>
+                                                <if expression="i%7==0">
+                                                    <then/>
+                                                    <else>
+                                                        <output expression="i" newline="True"/>
+                                                    </else>
+                                                </if>
+                                            </else>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                        <assign variable="i" expression="i+1"/>
+                    </while>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

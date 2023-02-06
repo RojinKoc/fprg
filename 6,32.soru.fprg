@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="kocoz"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-05 10:47:58 &#214;&#214;"/>
+        <attribute name="created" value="a29jb3o7REVTS1RPUC1TRjVKMTgzOzIwMjItMTEtMDU7MTA6Mjc6MzUgw5bDljszMTE1"/>
+        <attribute name="edited" value="a29jb3o7REVTS1RPUC1TRjVKMTgzOzIwMjItMTEtMDU7MTA6NDc6NTggw5bDljsxOzMyMzA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi" type="Integer" array="False" size=""/>
+            <input variable="sayi"/>
+            <if expression="sayi&gt;0">
+                <then>
+                    <if expression="(sayi-1)%4==0">
+                        <then>
+                            <output expression="&quot;Hilbertdir.&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Hilbert de&#287;ildir.&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Hilbert de&#287;ildir.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
